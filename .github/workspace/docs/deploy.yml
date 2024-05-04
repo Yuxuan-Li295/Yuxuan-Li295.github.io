@@ -38,7 +38,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site
+          folder: docs/_site
  64 changes: 0 additions & 64 deletions64  
 .github/workflows/jekyll.yml
 @@ -1,64 +0,0 @@
