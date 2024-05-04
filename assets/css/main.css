@@ -156,7 +156,7 @@ blockquote {
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .profile {
     width: 50%;
   }
