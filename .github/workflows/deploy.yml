@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'
+          ruby-version: "3.2.2"
           bundler-cache: true
 
       - name: Install and Build 🔧
@@ -32,7 +32,8 @@ jobs:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: Yuxuan-Li295/Yuxuan-Li295.github.io
         run: |
-          bundle exec jekyll build
+          rm -rf _site
+          bundle exec jekyll build --source . --destination ./_site
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
