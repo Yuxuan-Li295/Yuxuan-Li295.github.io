@@ -55,11 +55,19 @@ blockquote {
 // Profile
 
 .profile {
+  display: flex;
+  align-items: center; /* 确保图片和文本在同一行垂直居中 */
+  justify-content: start; /* 从行的开始位置对齐元素 */
   margin-left: 1rem;
-  width: 100%;
-  margin-right: 0rem;
+  margin-right: 1rem;
   height: auto;
 
+  .profile img {
+    width: 150px; /* 或根据需要调整更适合的尺寸 */
+    height: auto; /* 保持图片的比例 */
+    border-radius: 50%; /* 如果需要圆形图片 */
+    margin-right: 20px; /* 添加图片和文本之间的间距 */
+  }
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
