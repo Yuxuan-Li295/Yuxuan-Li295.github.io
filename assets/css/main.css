@@ -141,8 +141,10 @@ blockquote {
 .profile .profile img {
   width: 150px; /* 或根据需要调整更适合的尺寸 */
   height: auto; /* 保持图片的比例 */
-  border-radius: 50%; /* 如果需要圆形图片 */
   margin-right: 20px; /* 添加图片和文本之间的间距 */
+}
+.profile .profile .content {
+  flex-grow: 1; /* 让文本内容占据剩余空间 */
 }
 .profile .address {
   margin-bottom: 5px;
@@ -154,9 +156,9 @@ blockquote {
   margin: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .profile {
-    width: 30%;
+    width: 50%;
   }
   .profile .address p {
     display: block;
