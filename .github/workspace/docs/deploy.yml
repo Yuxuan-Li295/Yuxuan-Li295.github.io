@@ -33,7 +33,7 @@ jobs:
           PAGES_REPO_NWO: Yuxuan-Li295/Yuxuan-Li295.github.io
         run: |
           rm -rf _site
-          bundle exec jekyll build --source . --destination ./_site
+          bundle exec jekyll build --source ./docs --destination ./_site
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
