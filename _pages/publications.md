@@ -1,15 +1,22 @@
 ---
 layout: page
 permalink: /publications/
-title: Publications
+title: Projects
 description: 
-years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016]
 nav: true
 ---
 
-[[Google scholar](https://scholar.google.com/citations?user=hBZ_tKsAAAAJ)] | [[DBLP](https://dblp.org/pid/19/2969-1.html)] | [[View by topic](https://jd92.wang/research/)]
 
-#### Preprints
+#### Distributed Trading System
+
+In this project, I engineered a scalable distributed trading system by employing Spring Boot and Spring Cloud for a microservice architecture, to ensure a efficient and reliable system design. 
+
+Some of the summary of the diffculties in the project:
+ 1. Implemented goods search part by utilizing ElasticSearch + Kibana, resolve the problem of search performance and search accuracy under massive data requests. At the same time, Support Chinese Search with IK Segmenter.
+ 2. 
+ 3. 
+
+- Goods Module
 
 
 - A Survey on Evaluation of Large Language Models. Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Kaijie Zhu, Hao Chen, Linyi Yang, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, Wei Ye, Yue Zhang, Yi Chang, Philip S. Yu, Qiang Yang, Xing Xie. [[arxiv](https://arxiv.org/abs/2307.03109)] [[code](https://github.com/MLGroupJLU/LLM-eval-survey)]
