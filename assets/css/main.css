@@ -133,6 +133,7 @@ blockquote {
   margin-left: 1rem;
   width: 100%;
   margin-right: 0rem;
+  height: auto;
 }
 .profile .address {
   margin-bottom: 5px;
