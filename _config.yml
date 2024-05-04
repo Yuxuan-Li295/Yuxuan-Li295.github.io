@@ -14,8 +14,6 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 # Build settings
-source: ./docs
-destination: ./docs/_site
 repository: Yuxuan-Li295/Yuxuan-Li295.github.io
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🐼 # the emoji used as the favicon
