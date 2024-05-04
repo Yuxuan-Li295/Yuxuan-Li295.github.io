@@ -20,20 +20,15 @@ jobs:
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
-
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
-
     - name: Install and Build 🔧
       run: |
         export JEKYLL_ENV=production
         bundle exec jekyll build
-      env:
-        PAGES_REPO_NWO: Yuxuan-Li295/Yuxuan-Li295.github.io
-
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
