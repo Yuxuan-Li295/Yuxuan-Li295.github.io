@@ -32,7 +32,7 @@ jobs:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: Yuxuan-Li295/Yuxuan-Li295.github.io
         run: |
-          bundle exec jekyll build --source . --destination ./_site
+          bundle exec jekyll build
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
