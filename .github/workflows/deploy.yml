@@ -31,6 +31,8 @@ jobs:
       run: |
         export JEKYLL_ENV=production
         bundle exec jekyll build
+      env:
+        PAGES_REPO_NWO: Yuxuan-Li295/Yuxuan-Li295.github.io
 
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
