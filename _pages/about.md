@@ -6,7 +6,7 @@ description:
 
 profile:
   align: left
-  image: me2.png
+  image: Yuxuan.JPG
   address: 
 
 news: true  # includes a list of news items
