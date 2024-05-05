@@ -1,13 +1,13 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /projects/
 title: Projects
 description: 
 nav: true
 ---
 
 
-#### Distributed Trading System
+#### [Distributed Trading System](https://github.com/Yuxuan-Li295/trade-release)
 
 In this project, I engineered a scalable distributed trading system by employing Spring Boot and Spring Cloud for a microservice architecture, to ensure a efficient and reliable system design. 
 
@@ -20,11 +20,11 @@ Some of the summary of the diffculties in the project:
  6. Use Redis for 'limit purchase' processing and cache warm-up to improve page access performance.
  7. Use Thymeleaf model engine to static web pages, reduce the processing pressure on the back-end services, and improve page access speed. 
  8. Intercepting malicious requests by employing a blacklisting model: in order to improve the response speed of the blacklisting service, the data is stored in the redis. 
+ 9. Use SpringCloud as the distriuted framework, where consul is used as the service registry, and OpenFeign is used as the RPC service invocation component. 
+ 10. Implement the database sharding through shardingsphere-JDBC to improve the database data storage capacity as well as data query and concurrency degree. 
+ 11. Implement current limiting strategy using Hystrix in the sub-projects and configure the whole projects in AWS cloud.
 
-- Goods Module
 
-
-- A Survey on Evaluation of Large Language Models. Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Kaijie Zhu, Hao Chen, Linyi Yang, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, Wei Ye, Yue Zhang, Yi Chang, Philip S. Yu, Qiang Yang, Xing Xie. [[arxiv](https://arxiv.org/abs/2307.03109)] [[code](https://github.com/MLGroupJLU/LLM-eval-survey)]
 - PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts. Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, Xing Xie. [[arxiv](https://arxiv.org/abs/2306.04528)] [[code](https://github.com/microsoft/promptbench)]
 - PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization. Yidong Wang, Zhuohao Yu, Zhengran Zeng, Linyi Yang, Cunxiang Wang, Hao Chen, Chaoya Jiang, Rui Xie, Jindong Wang, Xing Xie, Wei Ye, Shikun Zhang, Yue Zhang. [[arxiv](https://arxiv.org/abs/2306.05087)] [[code](https://github.com/WeOpenML/PandaLM)]
 - Selective Mixup Helps with Distribution Shifts, But Not (Only) because of Mixup. Damien Teney, Jindong Wang, Ehsan Abbasnejad. [[arxiv](https://arxiv.org/abs/2305.16817)]
