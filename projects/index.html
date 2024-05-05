@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐼</text></svg>">
 
 <link rel="stylesheet" href="/pages/Yuxuan-Li295/assets/css/main.css">
-<link rel="canonical" href="https://yuxuan-li295.github.io/pages/Yuxuan-Li295/publications/">
+<link rel="canonical" href="https://yuxuan-li295.github.io/pages/Yuxuan-Li295/projects/">
 
 
 
@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
           
           
           <li class="nav-item active">
-              <a class="nav-link" href="/pages/Yuxuan-Li295/publications/">
+              <a class="nav-link" href="/pages/Yuxuan-Li295/projects/">
                 Projects
                 
                 <span class="sr-only">(current)</span>
@@ -179,7 +179,7 @@ var _hmt = _hmt || [];
   </header>
 
   <article>
-    <h4 id="distributed-trading-system">Distributed Trading System</h4>
+    <h4 id="distributed-trading-system"><a href="https://github.com/Yuxuan-Li295/trade-release" target="_blank" rel="noopener noreferrer">Distributed Trading System</a></h4>
 
 <p>In this project, I engineered a scalable distributed trading system by employing Spring Boot and Spring Cloud for a microservice architecture, to ensure a efficient and reliable system design.</p>
 
@@ -193,13 +193,12 @@ var _hmt = _hmt || [];
   <li>Use Redis for ‘limit purchase’ processing and cache warm-up to improve page access performance.</li>
   <li>Use Thymeleaf model engine to static web pages, reduce the processing pressure on the back-end services, and improve page access speed.</li>
   <li>Intercepting malicious requests by employing a blacklisting model: in order to improve the response speed of the blacklisting service, the data is stored in the redis.</li>
+  <li>Use SpringCloud as the distriuted framework, where consul is used as the service registry, and OpenFeign is used as the RPC service invocation component.</li>
+  <li>Implement the database sharding through shardingsphere-JDBC to improve the database data storage capacity as well as data query and concurrency degree.</li>
+  <li>Implement current limiting strategy using Hystrix in the sub-projects and configure the whole projects in AWS cloud.</li>
 </ol>
 
 <ul>
-  <li>
-    <p>Goods Module</p>
-  </li>
-  <li>A Survey on Evaluation of Large Language Models. Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Kaijie Zhu, Hao Chen, Linyi Yang, Xiaoyuan Yi, Cunxiang Wang, Yidong Wang, Wei Ye, Yue Zhang, Yi Chang, Philip S. Yu, Qiang Yang, Xing Xie. [<a href="https://arxiv.org/abs/2307.03109" target="_blank" rel="noopener noreferrer">arxiv</a>] [<a href="https://github.com/MLGroupJLU/LLM-eval-survey" target="_blank" rel="noopener noreferrer">code</a>]</li>
   <li>PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts. Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, Xing Xie. [<a href="https://arxiv.org/abs/2306.04528" target="_blank" rel="noopener noreferrer">arxiv</a>] [<a href="https://github.com/microsoft/promptbench" target="_blank" rel="noopener noreferrer">code</a>]</li>
   <li>PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization. Yidong Wang, Zhuohao Yu, Zhengran Zeng, Linyi Yang, Cunxiang Wang, Hao Chen, Chaoya Jiang, Rui Xie, Jindong Wang, Xing Xie, Wei Ye, Shikun Zhang, Yue Zhang. [<a href="https://arxiv.org/abs/2306.05087" target="_blank" rel="noopener noreferrer">arxiv</a>] [<a href="https://github.com/WeOpenML/PandaLM" target="_blank" rel="noopener noreferrer">code</a>]</li>
   <li>Selective Mixup Helps with Distribution Shifts, But Not (Only) because of Mixup. Damien Teney, Jindong Wang, Ehsan Abbasnejad. [<a href="https://arxiv.org/abs/2305.16817" target="_blank" rel="noopener noreferrer">arxiv</a>]</li>
