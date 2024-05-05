@@ -13,8 +13,13 @@ In this project, I engineered a scalable distributed trading system by employing
 
 Some of the summary of the diffculties in the project:
  1. Implemented goods search part by utilizing ElasticSearch + Kibana, resolve the problem of search performance and search accuracy under massive data requests. At the same time, Support Chinese Search with IK Segmenter.
- 2. 
- 3. 
+ 2. Unique ID generation for distributed environments by using the SnowFlake algorithm.
+ 3. Using Rabbitmq as a system business processing MQ to handle inventory deduction data consistency through delayed messages and handle order generation in concurrent scenarios asynchronously. 
+ 4. Handle inventory and data consistency processing by splitting the inventory deduction step into lockout, write-off and rollback and use Redis + Lua scripting solution.
+ 5. Use Jmeter to simulate large number of concurrent requests to the system to verify the accuracy fo teh system in concurrent scenarios. 
+ 6. Use Redis for 'limit purchase' processing and cache warm-up to improve page access performance.
+ 7. Use Thymeleaf model engine to static web pages, reduce the processing pressure on the back-end services, and improve page access speed. 
+ 8. Intercepting malicious requests by employing a blacklisting model: in order to improve the response speed of the blacklisting service, the data is stored in the redis. 
 
 - Goods Module
 
