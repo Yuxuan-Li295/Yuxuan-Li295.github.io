@@ -2,27 +2,37 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: 
+description: Overview of my software development projects, demonstrating expertise in distributed systems, microservices, and full-stack development.
 nav: true
 ---
 
+### [Distributed Trading System](https://github.com/Yuxuan-Li295/trade-release)
 
-#### [Distributed Trading System](https://github.com/Yuxuan-Li295/trade-release)
+In this project, I engineered a scalable distributed trading system using **Spring Boot** and **Spring Cloud** within a microservice architecture, focusing on efficiency and reliability.
 
-In this project, I engineered a scalable distributed trading system by employing Spring Boot and Spring Cloud for a microservice architecture, to ensure a efficient and reliable system design. 
+#### Challenges and Solutions:
+1. **Search Performance and Accuracy**: Implemented goods search functionality using **ElasticSearch + Kibana**, enhancing performance and accuracy under massive data requests, including support for Chinese search with IK Segmenter.
+2. **Unique ID Generation**: Utilized the SnowFlake algorithm for reliable ID generation in distributed environments.
+3. **Message Queue Handling**: Integrated **RabbitMQ** to maintain data consistency through delayed messages and handle order generation asynchronously in concurrent scenarios.
+4. **Inventory Management**: Improved inventory and data consistency by splitting inventory deduction into lockout, write-off, and rollback phases using **Redis + Lua** scripts.
+5. **System Stress Testing**: Employed **JMeter** to simulate high volumes of concurrent requests, verifying system accuracy and robustness.
+6. **Performance Optimization**: Used Redis for 'limit purchase' processing and cache warming to enhance page access performance.
+7. **Static Content Management**: Implemented **Thymeleaf** template engine to generate static web pages, reducing backend load and improving response times.
+8. **Security Enhancements**: Implemented a blacklisting model with data stored in Redis to intercept malicious requests efficiently.
+9. **Service Discovery and RPC**: Used **SpringCloud** with **Consul** for service registry and **OpenFeign** for RPC service invocation.
+10. **Database Scaling**: Applied database sharding with **Shardingsphere-JDBC** to enhance data storage capacity and query performance.
+11. **Fault Tolerance**: Integrated **Hystrix** for current limiting strategies among sub-projects, with overall configuration managed in AWS Cloud.
 
-Some of the summary of the diffculties in the project:
- 1. Implemented goods search part by utilizing ElasticSearch + Kibana, resolve the problem of search performance and search accuracy under massive data requests. At the same time, Support Chinese Search with IK Segmenter.
- 2. Unique ID generation for distributed environments by using the SnowFlake algorithm.
- 3. Using Rabbitmq as a system business processing MQ to handle inventory deduction data consistency through delayed messages and handle order generation in concurrent scenarios asynchronously. 
- 4. Handle inventory and data consistency processing by splitting the inventory deduction step into lockout, write-off and rollback and use Redis + Lua scripting solution.
- 5. Use Jmeter to simulate large number of concurrent requests to the system to verify the accuracy fo teh system in concurrent scenarios. 
- 6. Use Redis for 'limit purchase' processing and cache warm-up to improve page access performance.
- 7. Use Thymeleaf model engine to static web pages, reduce the processing pressure on the back-end services, and improve page access speed. 
- 8. Intercepting malicious requests by employing a blacklisting model: in order to improve the response speed of the blacklisting service, the data is stored in the redis. 
- 9. Use SpringCloud as the distriuted framework, where consul is used as the service registry, and OpenFeign is used as the RPC service invocation component. 
- 10. Implement the database sharding through shardingsphere-JDBC to improve the database data storage capacity as well as data query and concurrency degree. 
- 11. Implement current limiting strategy using Hystrix in the sub-projects and configure the whole projects in AWS cloud.
+### [Course Enrollment System](https://github.com/Yuxuan-Li295/COURSE-ENROLLEMNT)
+
+Developed a responsive web-based course enrollment system that allows students to manage their academic courses effectively.
+
+#### Key Features:
+- **User Interface**: Built with **React.js** and **Material-UI** for a dynamic and accessible user experience.
+- **Backend Services**: Utilized **Node.js** and **Express** for robust API services.
+- **Data Handling**: Employed **MongoDB** for flexible and efficient data management.
+- **Authentication**: Implemented JWT-based authentication to secure user sessions and data.
+- **Real-time Data Processing**: Leveraged **Socket.IO** for real-time communication between clients and servers.
 
 
 - PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts. Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, Xing Xie. [[arxiv](https://arxiv.org/abs/2306.04528)] [[code](https://github.com/microsoft/promptbench)]
