@@ -31,9 +31,10 @@ In this project, I Developed a responsive web-based course enrollment system tha
 - **User Interface**: Built with **React.js** and **Material-UI** for a dynamic and accessible user experience.
 - **Backend Services**: Utilized **Spring Boot** and **Gradle** for robust API services.
 - **User Email Registration**: 
-<center>
-<img src="assets/img/CES_Registration.png" style="width: 85%"/>
-</center>
+<p align="center">
+  <img src="../assets/img/CES_Registration.png" width="85%" />
+</p>
+
 
 - **Authentication**: Implemented JWT-based authentication to secure user sessions and data.
 
