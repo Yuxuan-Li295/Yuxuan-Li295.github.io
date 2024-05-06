@@ -175,30 +175,57 @@ var _hmt = _hmt || [];
 
   <header class="post-header">
     <h1 class="post-title">Projects</h1>
-    <p class="post-description"></p>
+    <p class="post-description">Overview of my software development projects, demonstrating expertise in distributed systems, microservices, and full-stack development.</p>
   </header>
 
   <article>
-    <h4 id="distributed-trading-system"><a href="https://github.com/Yuxuan-Li295/trade-release" target="_blank" rel="noopener noreferrer">Distributed Trading System</a></h4>
+    <h3 id="distributed-trading-system"><a href="https://github.com/Yuxuan-Li295/trade-release" target="_blank" rel="noopener noreferrer">Distributed Trading System</a></h3>
 
-<p>In this project, I engineered a scalable distributed trading system by employing Spring Boot and Spring Cloud for a microservice architecture, to ensure a efficient and reliable system design.</p>
+<p>In this project, I engineered a scalable distributed trading system using <strong>Spring Boot</strong> and <strong>Spring Cloud</strong> within a microservice architecture, focusing on efficiency and reliability.</p>
 
-<p>Some of the summary of the diffculties in the project:</p>
+<h4 id="challenges-and-solutions">Challenges and Solutions:</h4>
 <ol>
-  <li>Implemented goods search part by utilizing ElasticSearch + Kibana, resolve the problem of search performance and search accuracy under massive data requests. At the same time, Support Chinese Search with IK Segmenter.</li>
-  <li>Unique ID generation for distributed environments by using the SnowFlake algorithm.</li>
-  <li>Using Rabbitmq as a system business processing MQ to handle inventory deduction data consistency through delayed messages and handle order generation in concurrent scenarios asynchronously.</li>
-  <li>Handle inventory and data consistency processing by splitting the inventory deduction step into lockout, write-off and rollback and use Redis + Lua scripting solution.</li>
-  <li>Use Jmeter to simulate large number of concurrent requests to the system to verify the accuracy fo teh system in concurrent scenarios.</li>
-  <li>Use Redis for ‘limit purchase’ processing and cache warm-up to improve page access performance.</li>
-  <li>Use Thymeleaf model engine to static web pages, reduce the processing pressure on the back-end services, and improve page access speed.</li>
-  <li>Intercepting malicious requests by employing a blacklisting model: in order to improve the response speed of the blacklisting service, the data is stored in the redis.</li>
-  <li>Use SpringCloud as the distriuted framework, where consul is used as the service registry, and OpenFeign is used as the RPC service invocation component.</li>
-  <li>Implement the database sharding through shardingsphere-JDBC to improve the database data storage capacity as well as data query and concurrency degree.</li>
-  <li>Implement current limiting strategy using Hystrix in the sub-projects and configure the whole projects in AWS cloud.</li>
+  <li>
+<strong>Search Performance and Accuracy</strong>: Implemented goods search functionality using <strong>ElasticSearch + Kibana</strong>, enhancing performance and accuracy under massive data requests, including support for Chinese search with IK Segmenter.</li>
+  <li>
+<strong>Unique ID Generation</strong>: Utilized the SnowFlake algorithm for reliable ID generation in distributed environments.</li>
+  <li>
+<strong>Message Queue Handling</strong>: Integrated <strong>RabbitMQ</strong> to maintain data consistency through delayed messages and handle order generation asynchronously in concurrent scenarios.</li>
+  <li>
+<strong>Inventory Management</strong>: Improved inventory and data consistency by splitting inventory deduction into lockout, write-off, and rollback phases using <strong>Redis + Lua</strong> scripts.</li>
+  <li>
+<strong>System Stress Testing</strong>: Employed <strong>JMeter</strong> to simulate high volumes of concurrent requests, verifying system accuracy and robustness.</li>
+  <li>
+<strong>Performance Optimization</strong>: Used Redis for ‘limit purchase’ processing and cache warming to enhance page access performance.</li>
+  <li>
+<strong>Static Content Management</strong>: Implemented <strong>Thymeleaf</strong> template engine to generate static web pages, reducing backend load and improving response times.</li>
+  <li>
+<strong>Security Enhancements</strong>: Implemented a blacklisting model with data stored in Redis to intercept malicious requests efficiently.</li>
+  <li>
+<strong>Service Discovery and RPC</strong>: Used <strong>SpringCloud</strong> with <strong>Consul</strong> for service registry and <strong>OpenFeign</strong> for RPC service invocation.</li>
+  <li>
+<strong>Database Scaling</strong>: Applied database sharding with <strong>Shardingsphere-JDBC</strong> to enhance data storage capacity and query performance.</li>
+  <li>
+<strong>Fault Tolerance</strong>: Integrated <strong>Hystrix</strong> for current limiting strategies among sub-projects, with overall configuration managed in AWS Cloud.</li>
 </ol>
 
+<h3 id="course-enrollment-system"><a href="https://github.com/Yuxuan-Li295/COURSE-ENROLLEMNT" target="_blank" rel="noopener noreferrer">Course Enrollment System</a></h3>
+
+<p>Developed a responsive web-based course enrollment system that allows students to manage their academic courses effectively.</p>
+
+<h4 id="key-features">Key Features:</h4>
 <ul>
+  <li>
+<strong>User Interface</strong>: Built with <strong>React.js</strong> and <strong>Material-UI</strong> for a dynamic and accessible user experience.</li>
+  <li>
+<strong>Backend Services</strong>: Utilized <strong>Node.js</strong> and <strong>Express</strong> for robust API services.</li>
+  <li>
+<strong>Data Handling</strong>: Employed <strong>MongoDB</strong> for flexible and efficient data management.</li>
+  <li>
+<strong>Authentication</strong>: Implemented JWT-based authentication to secure user sessions and data.</li>
+  <li>
+    <p><strong>Real-time Data Processing</strong>: Leveraged <strong>Socket.IO</strong> for real-time communication between clients and servers.</p>
+  </li>
   <li>PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts. Kaijie Zhu, Jindong Wang, Jiaheng Zhou, Zichen Wang, Hao Chen, Yidong Wang, Linyi Yang, Wei Ye, Neil Zhenqiang Gong, Yue Zhang, Xing Xie. [<a href="https://arxiv.org/abs/2306.04528" target="_blank" rel="noopener noreferrer">arxiv</a>] [<a href="https://github.com/microsoft/promptbench" target="_blank" rel="noopener noreferrer">code</a>]</li>
   <li>PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization. Yidong Wang, Zhuohao Yu, Zhengran Zeng, Linyi Yang, Cunxiang Wang, Hao Chen, Chaoya Jiang, Rui Xie, Jindong Wang, Xing Xie, Wei Ye, Shikun Zhang, Yue Zhang. [<a href="https://arxiv.org/abs/2306.05087" target="_blank" rel="noopener noreferrer">arxiv</a>] [<a href="https://github.com/WeOpenML/PandaLM" target="_blank" rel="noopener noreferrer">code</a>]</li>
   <li>Selective Mixup Helps with Distribution Shifts, But Not (Only) because of Mixup. Damien Teney, Jindong Wang, Ehsan Abbasnejad. [<a href="https://arxiv.org/abs/2305.16817" target="_blank" rel="noopener noreferrer">arxiv</a>]</li>
@@ -244,7 +271,7 @@ var _hmt = _hmt || [];
     
     
     
-    Last updated: May 05, 2024.
+    Last updated: May 06, 2024.
     
   </div>
   <!-- <a href="https://www.easycounter.com/">
