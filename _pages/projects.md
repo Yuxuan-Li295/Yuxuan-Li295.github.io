@@ -36,6 +36,14 @@ In this project, I Developed a responsive web-based course enrollment system tha
   <img src="../assets/img/LoginInterface.png" width="85%" />
 </p>
 
+Here we can signup user, there is a several different cases:
+
+Case1:
+The user has already registered, the system will identified it and pop up the prompt message:
+<p align="center">
+  <img src="../assets/img/AlreadyRegistered.png" width="85%" />
+</p>
+
 - **User Email Registration**: 
 <p align="center">
   <img src="../assets/img/CES_Registration.png" width="85%" />
