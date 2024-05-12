@@ -30,10 +30,18 @@ In this project, I Developed a responsive web-based course enrollment system tha
 #### Key Features:
 - **User Interface**: Built with **React.js** and **Material-UI** for a dynamic and accessible user experience.
 - **Backend Services**: Utilized **Spring Boot** and **Gradle** for robust API services. I utilized JHipster as a robust toolset that integrates Spring Boot for the backend, it automates much of the boilerpolate code and configuration, allowing me focus on the real service logic. Another use of JHipster in our project ensures that our system is built on solide foundation of best practices for security, database management, and service registration.
+- **Login Interface**:
+
+<p align="center">
+  <img src="../assets/img/LoginInterface.png" width="85%" />
+</p>
+
 - **User Email Registration**: 
 <p align="center">
   <img src="../assets/img/CES_Registration.png" width="85%" />
 </p>
+
+
 
 
 - **Authentication**: Implemented JWT-based authentication to secure user sessions and data.
